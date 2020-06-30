@@ -1,0 +1,27 @@
+### ALL TODOS
+GET http://127.0.0.1:8001/api/todos
+
+### POST REQUEST
+POST http://127.0.0.1:8001/api/todos/
+Content-Type: application/json
+
+{
+    "name": "Test Todo",
+    "status": "Completed"
+}
+
+### SINGLE TODO
+GET http://127.0.0.1:8001/api/todos/1
+
+### FIRST TODO PUT REQUEST
+POST http://127.0.0.1:8001/api/todos/1?_method=PUT
+Content-Type: application/json
+
+{
+    "name": "Updated Todo",
+    "status": "Completed"
+}
+
+### TODO DELETE REQUEST
+DELETE http://127.0.0.1:8001/api/todos/2
+
